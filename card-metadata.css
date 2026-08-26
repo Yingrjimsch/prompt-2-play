@@ -1,0 +1,20 @@
+.game-details { margin-top: 20px; border-top: 1px solid var(--line); }
+.game-details summary { display: flex; align-items: center; justify-content: space-between; padding: 13px 0; color: #5937e8; cursor: pointer; list-style: none; text-transform: uppercase; font: 900 .62rem/1 system-ui, sans-serif; letter-spacing: .12em; }
+.game-details summary::-webkit-details-marker { display: none; }
+.game-details summary::after { content: "+"; color: var(--ink); font: 900 1rem/1 monospace; }
+.game-details[open] summary::after { content: "−"; }
+.game-details summary:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.game-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 22px; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.game-meta div { display: grid; grid-template-columns: auto 1fr; gap: 9px; padding: 9px 0; border-bottom: 1px solid var(--line); font: 700 .68rem/1.4 system-ui, sans-serif; }
+.game-meta div:nth-child(3) { grid-column: 1 / -1; }
+.game-meta dt { color: #777184; text-transform: uppercase; font-size: .56rem; letter-spacing: .1em; }
+.game-meta dd { min-width: 0; margin: 0; text-align: right; overflow-wrap: anywhere; }
+.prompt-copy { margin-top: 14px; padding: 15px 16px; background: #f4f0e7; border: 1px solid var(--line); }
+.prompt-copy > span { display: block; margin-bottom: 7px; color: #5937e8; text-transform: uppercase; font-size: .57rem; font-weight: 900; letter-spacing: .12em; }
+.prompt-copy p { margin: 0; color: #494354; font: .74rem/1.55 system-ui, sans-serif; }
+
+@media (max-width: 620px) {
+  .game-meta { grid-template-columns: 1fr; }
+  .game-meta div:nth-child(3) { grid-column: auto; }
+}

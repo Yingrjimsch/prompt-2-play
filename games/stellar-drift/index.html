@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Play Stellar Drift, the first Prompt 2 Play minigame.">
+  <title>Stellar Drift</title>
+  <link rel="stylesheet" href="game.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="game-shell" aria-label="Stellar Drift game">
+    <div class="hud">
+      <a href="../../" aria-label="Back to the Prompt 2 Play arcade">← ARCADE</a>
+      <span>SCORE <b id="score">000000</b></span>
+      <span>BEST <b id="best">000000</b></span>
+    </div>
+    <canvas id="game" width="720" height="720"></canvas>
+    <div class="overlay" id="overlay">
+      <div class="ship-icon" aria-hidden="true">▲</div>
+      <h1>Stellar Drift</h1>
+      <p>Use arrow keys, A/D, or drag to steer.</p>
+      <button id="start-button">Launch →</button>
+    </div>
+  </main>
+</body>
+</html>

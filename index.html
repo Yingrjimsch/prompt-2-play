@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A fresh AI-generated browser game every day.">
+  <title>Prompt 2 Play — one prompt, one game, every day</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="card-metadata.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="./"><span class="brand-mark">P2P</span><span>Prompt 2 Play</span></a>
+    <nav aria-label="Main navigation"><a href="#arcade">Arcade</a><a href="#about">How to play</a><a class="nav-github" href="https://github.com/">GitHub ↗</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> New game generated daily</p>
+        <h1>One prompt.<br>One game.</h1>
+        <p class="hero-intro">A tiny arcade where artificial intelligence gets one shot to dream up, code, and ship a playable browser game.</p>
+        <div class="hero-actions"><a class="button primary" id="latest-game-link" href="#arcade">Play latest game →</a><a class="button secondary" href="#arcade">Browse the arcade</a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit one"></div><div class="orbit two"></div><i class="pixel p1"></i><i class="pixel p2"></i>
+        <div class="cabinet"><b>Play Game</b><div class="screen"><span class="ship">▲</span><small>000420</small></div><div class="controls-art"><i></i><i></i><i></i></div></div>
+      </div>
+    </section>
+    <section class="arcade" id="arcade">
+      <div class="section-heading"><div><p class="eyebrow">The daily drops</p><h2>Enter the arcade</h2></div><p><strong id="game-count">00</strong> <span id="game-count-label">games online</span></p></div>
+      <div class="game-grid" id="game-grid" aria-live="polite"><p class="loading-games">Loading the arcade…</p></div>
+    </section>
+    <section class="about" id="about"><div><p class="eyebrow">How to play</p><h2>Your prompt. Your game. Everyone can publish.</h2></div><ol><li><span>01</span><div><strong>Clone the repository</strong><p>Pick an idea, clone the repo, and create a new folder at <code>games/&lt;slug&gt;/</code>.</p></div></li><li><span>02</span><div><strong>Build it with one prompt</strong><p>Use a single prompt to generate a self-contained static game in <code>index.html</code>. Add a valid <code>prompt.json</code> with the game metadata, model, author, and exact prompt you used.</p></div></li><li><span>03</span><div><strong>Open a merge request</strong><p>Submit your game for review. Once it checks out, it will be merged and published in the arcade—so anyone can share a funny game with everyone.</p></div></li></ol></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="./"><span class="brand-mark">P2P</span><span>Prompt 2 Play</span></a><p>Built by prompts, played by humans.</p><p>Open source on <a href="https://github.com/">GitHub ↗</a></p></footer>
+</body>
+</html>
