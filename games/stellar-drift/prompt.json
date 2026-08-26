@@ -1,5 +1,18 @@
 {
   "schemaVersion": 1,
-  "game": {"slug": "stellar-drift", "name": "Stellar Drift", "description": "Dodge cosmic debris, collect star shards, and survive the neon void.", "createdAt": "2026-08-26", "genre": "arcade", "controls": ["ArrowLeft", "ArrowRight", "A", "D", "Pointer"], "preview": "assets/stellar-drift-preview.svg"},
-  "generation": {"model": "placeholder-model", "author": "Prompt 2 Play", "harness": "codex", "prompt": "Create a self-contained, mobile-friendly HTML5 arcade game named Stellar Drift. The player steers a small ship through a neon starfield, dodges falling meteors, and collects glowing star shards for bonus points. Use only HTML, CSS, and vanilla JavaScript with no external dependencies. Include keyboard and pointer controls, a score, a persistent local best score, and a replay flow."}
+  "game": {
+    "slug": "stellar-drift",
+    "name": "Stellar Drift",
+    "description": "Dodge cosmic debris, collect star shards, and survive the neon void.",
+    "createdAt": "2026-08-26",
+    "genre": "arcade",
+    "controls": ["ArrowLeft", "ArrowRight", "A", "D", "Pointer"],
+    "preview": "assets/stellar-drift-preview.svg"
+  },
+  "generation": {
+    "model": "gpt-5.6-sol",
+    "author": "Yingrjimsch",
+    "harness": "codex",
+    "prompt": "Create a self-contained, mobile-friendly HTML5 arcade game named Stellar Drift. The player steers a small ship through a neon starfield, dodges falling meteors, and collects glowing star shards for bonus points. Use only HTML, CSS, and vanilla JavaScript with no external dependencies. Include keyboard and pointer controls, a score, a persistent local best score, and a replay flow."
+  }
 }
