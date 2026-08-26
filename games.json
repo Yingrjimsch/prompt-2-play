@@ -22,6 +22,34 @@
       "harness": "codex",
       "prompt": "Create a self-contained, mobile-friendly HTML5 arcade game named Stellar Drift. The player steers a small ship through a neon starfield, dodges falling meteors, and collects glowing star shards for bonus points. Use only HTML, CSS, and vanilla JavaScript with no external dependencies. Include keyboard and pointer controls, a score, a persistent local best score, and a replay flow."
     },
+    "number": 2
+  },
+  {
+    "schemaVersion": 1,
+    "game": {
+      "slug": "rainroot-relay",
+      "name": "Rainroot Relay",
+      "description": "Rotate root-channel tiles to carry precious rainwater across a rooftop garden and revive the waiting flower.",
+      "createdAt": "2026-08-26",
+      "genre": "puzzle",
+      "controls": [
+        "ArrowUp",
+        "ArrowDown",
+        "ArrowLeft",
+        "ArrowRight",
+        "Space",
+        "Enter",
+        "Pointer",
+        "Touch"
+      ],
+      "preview": "games/rainroot-relay/preview.svg"
+    },
+    "generation": {
+      "model": "codex-default",
+      "author": "Prompt 2 Play Bot",
+      "harness": "codex",
+      "prompt": "Create a self-contained, mobile-friendly browser puzzle game named Rainroot Relay using only semantic HTML, CSS, and vanilla JavaScript with no external dependencies. Present a warm paper-cut rooftop garden during a rain shower. The player must rotate a compact grid of root-channel tiles to connect a rain barrel on the left edge to a wilted flower on the right edge, then test the route by releasing a visible water pulse. Generate a guaranteed-solvable board by building one connected route and scrambling tile rotations, include decorative decoy channels, and provide three progressively larger rounds. Each round has a limited rotation budget; an incomplete tested route or exhausted budget ends the run, while completing all three rounds wins. Support pointer and touch by tapping tiles and buttons, plus keyboard play with arrow-key tile selection, Space to rotate, and Enter to release water. Clearly show the selected tile, remaining turns, round progress, concise in-game instructions, a start state, active gameplay, animated success or leak feedback, a loss state, a completion state, and a replay path. Make the layout responsive down to a mobile viewport, use accessible labels and focus styles, respect reduced-motion preferences, and create all visuals with CSS and inline browser-native graphics. Also add a lightweight 16:9 SVG preview that matches the game's paper-cut rain garden theme."
+    },
     "number": 1
   }
 ]

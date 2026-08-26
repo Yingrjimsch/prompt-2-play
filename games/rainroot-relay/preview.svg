@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Rainroot Relay</title>
+  <desc id="desc">A paper-cut rain barrel sends bright blue water through root tiles toward a pink rooftop flower.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#183c4b"/><stop offset="1" stop-color="#4b8590"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="0" flood-color="#102b33"/></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#sky)"/>
+  <g stroke="#aee8e6" stroke-width="8" stroke-linecap="round" opacity=".72">
+    <path d="M90 70l-18 42M250 16l-18 42M430 82l-18 42M660 20l-18 42M840 66l-18 42M1050 20l-18 42M1200 85l-18 42"/>
+  </g>
+  <path d="M0 240L180 150l190 72 190-126 210 125 180-82 330 112v469H0z" fill="#b66f4c" stroke="#132f38" stroke-width="18"/>
+  <path d="M0 273h1280" stroke="#e0a274" stroke-width="34"/>
+  <g filter="url(#shadow)">
+    <rect x="335" y="288" width="620" height="350" rx="34" fill="#56362c" stroke="#332520" stroke-width="13"/>
+    <g fill="#794d35" stroke="#a7764d" stroke-width="7">
+      <rect x="367" y="320" width="130" height="130" rx="20"/><rect x="518" y="320" width="130" height="130" rx="20"/><rect x="669" y="320" width="130" height="130" rx="20"/><rect x="820" y="320" width="103" height="130" rx="20"/>
+      <rect x="367" y="471" width="130" height="130" rx="20"/><rect x="518" y="471" width="130" height="130" rx="20"/><rect x="669" y="471" width="130" height="130" rx="20"/><rect x="820" y="471" width="103" height="130" rx="20"/>
+    </g>
+    <path d="M367 535h65V385h151v150h151V385h137v86" fill="none" stroke="#55d8e2" stroke-width="34" stroke-linejoin="round"/>
+    <g fill="#a4fbf0"><circle cx="432" cy="535" r="18"/><circle cx="583" cy="385" r="18"/><circle cx="734" cy="535" r="18"/><circle cx="871" cy="385" r="18"/></g>
+  </g>
+  <g transform="translate(190 390)" filter="url(#shadow)">
+    <path d="M0 0h115l-10 190H12z" fill="#bd8350" stroke="#3e312b" stroke-width="12"/>
+    <ellipse cx="57" cy="2" rx="62" ry="19" fill="#73d6dc" stroke="#3e312b" stroke-width="12"/>
+    <path d="M28 15v160M78 15v160" stroke="#8b593d" stroke-width="10"/>
+  </g>
+  <g transform="translate(1030 410)" stroke="#593d42" stroke-width="9" filter="url(#shadow)">
+    <path d="M78 95v155" stroke="#438348" stroke-width="18"/>
+    <g fill="#ef8591"><ellipse cx="78" cy="40" rx="42" ry="70"/><ellipse cx="132" cy="88" rx="70" ry="42"/><ellipse cx="78" cy="135" rx="42" ry="70"/><ellipse cx="24" cy="88" rx="70" ry="42"/></g>
+    <circle cx="78" cy="88" r="34" fill="#ffd974"/>
+  </g>
+  <text x="640" y="112" text-anchor="middle" fill="#fff0c8" stroke="#102d38" stroke-width="12" paint-order="stroke" font-family="Trebuchet MS, sans-serif" font-size="88" font-weight="900" letter-spacing="-4">RAINROOT RELAY</text>
+  <text x="640" y="175" text-anchor="middle" fill="#aee8e6" font-family="Trebuchet MS, sans-serif" font-size="29" font-weight="700" letter-spacing="7">TURN ROOTS · CARRY RAIN · GROW</text>
+</svg>
