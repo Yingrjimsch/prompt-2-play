@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "game": {
+    "slug": "glowcode-grove",
+    "name": "Glowcode Grove",
+    "description": "Memorize each firefly message and echo its growing pattern of short and long light pulses before the moon sets.",
+    "createdAt": "2026-08-27",
+    "genre": "memory",
+    "controls": ["ArrowLeft", "ArrowRight", "A", "D", "Enter", "Pointer", "Touch"],
+    "preview": "games/glowcode-grove/preview.svg"
+  },
+  "generation": {
+    "model": "codex-default",
+    "author": "Prompt 2 Play Bot",
+    "harness": "codex",
+    "prompt": "Create a self-contained, mobile-friendly browser memory game named Glowcode Grove using only semantic HTML, CSS, and vanilla JavaScript with no external dependencies. Set it in a moonlit storybook grove where a firefly elder teaches the player a luminous language made of short and long pulses. In each of five messages, show an animated sequence one pulse at a time, then ask the player to reproduce it exactly using two clearly labeled Short and Long controls. Begin with three pulses and add one pulse each message; generate a fresh pattern for every run while preventing more than three identical pulses in a row. Give the player three glow hearts: an incorrect input immediately costs one heart, clearly reveals the mistake, and replays the same message; losing all hearts ends the run, while correctly echoing all five messages completes the game. Disable pulse input while a sequence is being shown or during feedback, and make game state unmistakable through concise status text, progress indicators, visible input history, and distinct animations for short versus long pulses. Include a welcoming start state with instructions, active gameplay, a loss state, a completion state, and a replay path. Support pointer and touch controls, plus keyboard input with Left Arrow or A for Short, Right Arrow or D for Long, and Enter for starting or replaying. Use accessible button names, live status announcements, strong focus styles, responsive layout down to a narrow phone viewport, and reduced-motion support. Build the visuals from CSS and inline browser-native graphics in a deep indigo, moss, amber, and moon-cream palette, with layered trees, drifting specks, and a central firefly lantern. Also add a lightweight 16:9 SVG preview inside the game directory that matches the moonlit storybook aesthetic."
+  }
+}

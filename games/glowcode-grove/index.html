@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11142f">
+  <title>Glowcode Grove</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <main class="game-shell" aria-labelledby="game-title">
+    <div class="sky" aria-hidden="true">
+      <span class="moon"></span>
+      <span class="speck speck-1"></span>
+      <span class="speck speck-2"></span>
+      <span class="speck speck-3"></span>
+      <span class="speck speck-4"></span>
+      <span class="speck speck-5"></span>
+      <div class="trees trees-back"></div>
+      <div class="trees trees-front"></div>
+    </div>
+
+    <header class="masthead">
+      <p class="eyebrow">A moonlit memory game</p>
+      <h1 id="game-title">Glowcode Grove</h1>
+    </header>
+
+    <section class="game-card" aria-label="Glowcode Grove game">
+      <div class="hud" id="hud" hidden>
+        <div>
+          <span class="hud-label">Message</span>
+          <strong id="round-readout">1 / 5</strong>
+        </div>
+        <div class="progress-pips" id="progress-pips" aria-label="Message progress"></div>
+        <div class="hearts" id="hearts" aria-label="3 glow hearts remaining"></div>
+      </div>
+
+      <div class="lantern-stage" aria-hidden="true">
+        <div class="branch branch-left"></div>
+        <div class="branch branch-right"></div>
+        <div class="firefly" id="firefly">
+          <span class="wing wing-left"></span>
+          <span class="wing wing-right"></span>
+          <span class="glow-core"></span>
+        </div>
+        <div class="light-rings" id="light-rings"></div>
+      </div>
+
+      <div class="panel">
+        <div id="start-screen" class="screen">
+          <h2>Learn the grove’s glowcode</h2>
+          <p>Watch the elder firefly. Then echo each message with <strong>Short</strong> and <strong>Long</strong> pulses.</p>
+          <div class="legend" aria-label="Pulse controls">
+            <span><kbd>←</kbd> or <kbd>A</kbd> Short</span>
+            <span><kbd>→</kbd> or <kbd>D</kbd> Long</span>
+          </div>
+          <p class="small-copy">Five messages. Three glow hearts. A mistake replays the same message.</p>
+          <button class="primary-button" id="start-button" type="button">Begin listening</button>
+        </div>
+
+        <div id="play-screen" class="screen" hidden>
+          <p id="status" class="status" role="status" aria-live="polite">Listen closely…</p>
+          <div class="history-wrap">
+            <span class="history-label">Your echo</span>
+            <div class="history" id="history" aria-label="Your entered pulses"></div>
+          </div>
+          <div class="controls" aria-label="Pulse input">
+            <button class="pulse-button short-button" id="short-button" type="button" disabled>
+              <span class="pulse-mark dot"></span>
+              <span><strong>Short</strong><small>Left / A</small></span>
+            </button>
+            <button class="pulse-button long-button" id="long-button" type="button" disabled>
+              <span class="pulse-mark dash"></span>
+              <span><strong>Long</strong><small>Right / D</small></span>
+            </button>
+          </div>
+        </div>
+
+        <div id="end-screen" class="screen" hidden>
+          <p class="ending-kicker" id="ending-kicker">The grove remembers</p>
+          <h2 id="ending-title">Glowcode complete!</h2>
+          <p id="ending-copy">Every lantern in the grove answers your light.</p>
+          <button class="primary-button" id="replay-button" type="button">Play a new pattern</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
